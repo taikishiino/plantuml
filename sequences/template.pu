@@ -1,0 +1,18 @@
+@startuml
+
+title sample
+
+actor "user" as user
+participant "application" as app
+database "DB" as db
+
+user -> app : request
+activate app
+
+app -> db : retrieve by id
+app <-- db
+
+user <-- app : response
+deactivate app
+
+@enduml

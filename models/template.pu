@@ -1,0 +1,26 @@
+@startuml
+
+title Sample ER Diagram
+entity "user" {
+    ユーザー
+    ==
+    + id [PK]
+    # entity2_id bigint(20) null: false
+    # entity3_id bigint(20) null: false
+    name: varchar(64) null: false
+}
+
+entity "entity1" {
+}
+
+entity "entity2" {
+}
+
+entity "entity3" {
+}
+
+user o-- entity1
+user --{ entity2
+user }--{ entity3
+
+@enduml
