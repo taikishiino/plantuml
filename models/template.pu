@@ -19,8 +19,14 @@ entity "entity2" {
 entity "entity3" {
 }
 
-user o-- entity1
+entity "entity4" {
+}
+
+user -ri-{} entity1
 user --{ entity2
 user }--{ entity3
+user o-- entity4
+
+note bottom of lead_activities :
 
 @enduml

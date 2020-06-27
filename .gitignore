@@ -4,7 +4,7 @@
 /out/*
 
 ## ER図
-/models/反響きっかけを複数設定できるようにする.pu
+/models/private/*
 
 ## シーケンス図
-/sequences/hoge.pu
+/sequences/private/*
